@@ -31,8 +31,7 @@ git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/
 git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 
 # MosDNS
-#svn export https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns package/luci-app-mosdns
-#svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns package/mosdns
+git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.66/g' package/base-files/files/bin/config_generate
